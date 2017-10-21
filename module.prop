@@ -1,7 +1,8 @@
-id=template
-name=Template Module
-version=v1
-versionCode=1
-author=topjohnwu
-description=A short description
+id=Twemoji-systemless
+name=Twemoji
+version=v2.3
+versionCode=9
+author=Xyllon
+description=Systemlessly replaces emoji font with Twemoji.
+donate=paypal.me/Xyllon
 template=1400
