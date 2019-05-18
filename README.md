@@ -1,7 +1,5 @@
-# THIS REPOSITORY IS NOW ARCHIVED AND BEING MAINTAINED [HERE](https://github.com/Magisk-Modules-Repo/Twemoji-systemless)!
-
 # Twemoji Module for Magisk
 
-This module uses Magisk to systemlessly replace Android emojis with Twemoji (Twitter Emoji). Updated for Unicode 10.0.
+This module uses Magisk to systemlessly replace Android emojis with Twemoji (Twitter Emoji). Updated to Twemoji 12.0.1.
 
-Preview available [here](https://emojipedia.org/twitter/twemoji-2.3/).
+Preview available [here](https://emojipedia.org/twitter/twemoji-2.7/).
