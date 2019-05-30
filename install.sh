@@ -134,6 +134,13 @@ on_install() {
   # Extend/change the logic to whatever you want
   ui_print "- Extracting module files"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
+  [[ -d /sbin/.core/mirror ]] && MIRRORPATH=/sbin/.core/mirror || unset MIRRORPATH
+  FONTS=/system/etc/fonts.xml
+  FONTFILES=$(sed -ne '/<family lang="und-Zsye".*>/,/<\/family>/ {s/.*<font weight="400" style="normal">\(.*\)<\/font>.*/\1/p;}' $MIRRORPATH$FONTS)
+  for font in $FONTFILES
+  do
+    cp -f $MODPATH/system/fonts/NotoColorEmoji.ttf $MODPATH/system/fonts/$font
+  done
 }
 
 # Only some special files require specific permissions
