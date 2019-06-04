@@ -1,7 +1,7 @@
 id=Twemoji-systemless
 name=Twemoji
-version=v12.0.1
-versionCode=21
+version=v12.0.4
+versionCode=22
 author=Xyllon
 description=Systemlessly replaces emoji font with Twemoji.
 donate=paypal.me/Xyllon
