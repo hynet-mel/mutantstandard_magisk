@@ -1,6 +1,6 @@
 # Twemoji Module for Magisk
 
-This module uses Magisk to systemlessly replace Android emojis with Twemoji (Twitter Emoji). Updated to Twemoji 12.0.4.
+This module uses Magisk to systemlessly replace Android emojis with Twemoji (Twitter Emoji). Updated to Twemoji 12.1.3.
 
 Preview available [here](https://emojipedia.org/twitter/).
 
