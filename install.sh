@@ -132,15 +132,37 @@ print_modname() {
 on_install() {
   # The following is the default implementation: extract $ZIPFILE/system to $MODPATH
   # Extend/change the logic to whatever you want
+  ui_print "- Copying fonts.xml to modlocation"
+  FONTS=/system/etc/fonts.xml
+  mkdir -p $MODPATH/system/etc/
+  cp $FONTS $MODPATH/system/etc/fonts.xml
+  MODFONTCONF=$MODPATH$FONTS
   ui_print "- Extracting module files"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
   [[ -d /sbin/.core/mirror ]] && MIRRORPATH=/sbin/.core/mirror || unset MIRRORPATH
-  FONTS=/system/etc/fonts.xml
   FONTFILES=$(sed -ne '/<family lang="und-Zsye".*>/,/<\/family>/ {s/.*<font weight="400" style="normal">\(.*\)<\/font>.*/\1/p;}' $MIRRORPATH$FONTS)
   for font in $FONTFILES
   do
     ln -s /system/fonts/NotoColorEmoji.ttf $MODPATH/system/fonts/$font
   done
+  ### set #FALLBACK ENABLED to true for fallbackfonts
+  FALLBACKENABLED=false
+  if $FALLBACKENABLED
+  then
+    ui_print "- Setting fallback font"
+    ### set $BLOBON to true for blobmojis
+    BLOBON=false
+    FALLBACK="Twemoji.ttf"
+    if $BLOBON
+    then
+      FALLBACK="Blobmoji.ttf"
+    fi
+    ui_print "- Installing $FALLBACK as fallback emojis"
+    ln -s /system/fonts/$FALLBACK $MODPATH/system/fonts/$FALLBACK
+    FALLBACK=`echo $FALLBACK | sed 's/\./\\\\./g'`
+    sed -E "/<font weight=\"400\" style=\"normal\">NotoColorEmoji\.ttf<\/font>/a\n   <\/family>\n   <family lang=\"und-Zsye\">\n\t<font weight=\"400\" style=\"normal\">$FALLBACK<\/font>" $FONTS > $MODFONTCONF
+    ln -s $FONTS $MODFONTCONF
+  fi
 }
 
 # Only some special files require specific permissions
