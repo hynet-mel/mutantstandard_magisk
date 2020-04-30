@@ -1,7 +1,11 @@
-# Twemoji Module for Magisk
+# Mutant Standard emoji for Magisk
 
-This module uses Magisk to systemlessly replace Android emojis with Twemoji (Twitter Emoji). Updated to Twemoji 12.1.5.
 
-Preview available [here](https://emojipedia.org/twitter/).
+[Mutant Standard emoji](https://mutant.tech/)
+This module uses Magisk to systemlessly replace Android emojis with Mutant Standard emoji (MTNT Emoji).
 
-Credit to [simonsmh](https://github.com/simonsmh) for device detection script.
+Demo available [here](https://mutant.tech/demo/).
+
+Credit to:
+* [simonsmh](https://github.com/simonsmh) for device detection script.
+* [bfayers](https://github.com/bfayers) for the main repository this one was forked from [Repo here](https://github.com/bfayers/Magisk-Twemoji-systemless)
