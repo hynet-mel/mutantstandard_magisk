@@ -123,7 +123,7 @@ REPLACE="
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "            Twemoji            "
+  ui_print "           MTNT Emoji          "
   ui_print "*******************************"
 }
 

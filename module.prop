@@ -1,7 +1,6 @@
-id=Twemoji-systemless
-name=Twemoji
-version=v12.1.5
+id=MTNTemoji
+name=Mutant Standard emoji
+version=2020.04
 versionCode=27
-author=Xyl
-description=Systemlessly replaces emoji font with Twemoji.
-donate=paypal.me/Xyllon
+author=Mel
+description=Systemlessly replaces emoji font with Mutant Standard emoji. ( https://mutant.tech/ )
