@@ -1,6 +1,6 @@
 # Mutant Standard emoji for Magisk
 
-**WARNING: Because not all emojis are implemented with their own reasoning, alot emojis might tofu/not render [Check the FAQ](https://mutant.tech/info/faq/)**
+**WARNING: Because not all emojis are implemented with their own reasoning, alot emojis might tofu/not render. [Check the FAQ](https://mutant.tech/info/faq/)**
 
 Check out [Mutant Standard emoji](https://mutant.tech/) for the sources!
 This module uses Magisk to systemlessly replace Android emojis with Mutant Standard emoji (MTNT Emoji).
@@ -9,7 +9,8 @@ Demo available [here](https://mutant.tech/demo/).
 
 Credit to:
 * [simonsmh](https://github.com/simonsmh) for device detection script.
-* [bfayers](https://github.com/bfayers) for the main repository this one was forked from [Repo here](https://github.com/bfayers/Magisk-Twemoji-systemless)
+* [bfayers](https://github.com/bfayers) for the main repository this one was forked from: [Magisk-Modules-Grave/Twemoji-systemless](https://github.com/bfayers/Magisk-Twemoji-systemless)
+* The Mutant Standard team over at [mutant.tech](https://mutant.tech), [Dzuk](https://noct.zone/) for the artwork and [kiilas](https://computerfairi.es/@kiilas) for technical help!
 
 
 ## How to make the module:
